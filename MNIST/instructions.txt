@@ -1,0 +1,37 @@
+mnist/
+│
+├── mnist_model.keras      ← скачанная модель
+├── recognize.py            ← наш скрипт
+└── digits/                 ← папка, куда кладете PNG файлы
+    ├── digit1.png
+    ├── digit2.png
+    └── ...
+
+
+Модель h5 — запасная на случай, если Keras выйдет из строя
+
+В папку «digits» поместите PNG-файлы с цифрами размером 28×28
+
+Запуск скрипта Python recognize.py
+
+Важные рекомендации по рисованию цифр
+
+Чтобы модель работала точно:
+
+Рисуйте толстым белым карандашом на чёрном фоне (в Paint: заливка чёрная, кисть белая толщиной 15–20 пикселей)
+Цифра должна быть по центру и занимать большую часть изображения
+Если сделаете наоборот (черная цифра на белом фоне) — закомментируйте строку img_array = 1 - img_array в скрипте
+
+H5 model as a backup in case Keras breaks down
+
+Place 28×28 PNG files containing digits in the ‘digits’ folder
+
+Run the Python script ‘recognise.py’
+
+Important tips for drawing digits
+
+To ensure the model works accurately:
+
+Draw with a thick white pencil on a black background (in Paint: black fill, white brush with a thickness of 15–20px)
+The digit must be centred and occupy most of the image
+If you do the opposite (black digit on a white background), comment out the line `img_array = 1 - img_array` in the script
